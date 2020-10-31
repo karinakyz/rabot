@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="logo"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="DuoDraw - Рисование это просто"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработчик Карина Кузнецова"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/typePen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Тип кисти" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/normalBut"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="tnb"
+            android:text="Нормальный"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/embossBut"
+            android:layout_width="70dp"
+            android:layout_height="67dp"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="teb"
+            android:text="Тень"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/blurBut"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:onClick="tbb"
+            android:text="Размытие"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sizePen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Размер кисти" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/smallPenBut"
+            android:layout_width="70dp"
+            android:layout_height="68dp"
+            android:onClick="ssb"
+            android:text="Маленький"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/normalPenBut"
+            android:layout_width="70dp"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="snb"
+            android:text="Нормальный"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/bigPenBut"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:onClick="sbb"
+            android:text="Большой" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/colorPen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Цвет кисти" />
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/greenBut"
+            android:layout_width="70dp"
+            android:layout_height="63dp"
+            android:onClick="cgb"
+            android:text="Зелёный"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/redBut"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="crb"
+            android:text="Красный"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/blackBut"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:onClick="cbb"
+            android:text="Чёрный"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>
